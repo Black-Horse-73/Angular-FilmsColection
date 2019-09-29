@@ -1,10 +1,10 @@
 <section class="ColectionFilms">
-  <form>
-    <label><input type="text" #post>Постер</label>
-    <label><input type="text" #titl>Название фильма</label>
+  <div class="input-form">
+    <label><input type="text" #poster>Постер</label>
+    <label><input type="text" #title>Название фильма</label>
     <label><input type="text" #year>Год выпуска</label>
-    <button (click)="addFilm(post, titl, year)">Добавить фильм</button>
-  </form>
+    <button (click)="addFilm(poster, title, year)">Добавить фильм</button>
+  </div>
   <ul *ngIf="films.length > 0">
     <li *ngFor="let film of films; let i=index"><img src=" {{film.poster}}">
       <h3>{{film.title}}</h3>
