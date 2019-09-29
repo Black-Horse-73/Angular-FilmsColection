@@ -2,7 +2,7 @@
   <form>
     <label><input type="text" #post>Постер</label>
     <label><input type="text" #titl>Название фильма</label>
-    <label><input type="number" #year>Год выпуска</label>
+    <label><input type="text" #year>Год выпуска</label>
     <button (click)="addFilm(post, titl, year)">Добавить фильм</button>
   </form>
   <ul *ngIf="films.length > 0">
